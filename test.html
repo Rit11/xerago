@@ -9,376 +9,120 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Custom CSS -->
-    <style>
-		h1, h2{color:#2D3F8A;}
-		.carousel-control-next:hover,  .carousel-control-prev:hover{
-    		color: black;
-    		text-decoration: none;
-    		outline: 0;
-    		opacity: .9;
-		}
-		.carousel-control-next, .carousel-control-prev {
-    		width: 10%;
-		}
-        .carousel-item {
-    		height: 458px;
-		}
-		.carousel-item img {
-    		background-size: cover;
-		}
-		.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    		margin: 2rem;
-   			 font-weight: 500;
-    		line-height: 1.2;
-		}
-		.logo-sec {
-			display: inline-block;
-			padding-left: 30px;
-		}
-		.logo-img-sec {
-			display: inline-block;
-			padding: 18px 0px;
-		}
-		.logo-img-sec img {
-			width: 50%;
-		}
-		.maindiv_smartfilter {
-    	background: #2A3289;
-		}
-		.justify-content-center {
-    	justify-content: center !important;
-		}
-		.question-section h2 {
-    	background-color: #29D47C !important;
-    	-webkit-background-clip: text;
-    	-webkit-text-fill-color: transparent;
-		}
-		.solution-filter-area .select-smart-field select {
-			padding: calc(0.4vw + 0.4vh) calc(1.6vw + 1.6vh) calc(0.4vw + 0.4vh) calc(0.7vw + 0.7vh);
-			border-radius: calc(0.4vw + 0.4vh);
-			width: 100%;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-			color: #000;
-			background: #fff url(https://www.xerago.com//sites/sites7/themes/xerago_theme/images/select-field-arrow.png) no-repeat right center;
-			background-size: calc(0.9vw + 0.09vh);
-			background-position-x: calc(100% - 0.8vw);
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
-		
-
-		/* Break point: 1441 */
-		@media only screen and (min-width: 1441px) {
-			#revamp-page.s7-revamp .smart-content.smart7-content h2 {
-				background: #249E5E;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		}
-		/* Break point: 1366 */
-		@media (min-width: 1366px) {
-			.dropdown-toggle::after {
-				right: -21px !important;
-			}
-		}
-		/* Break point: 1200*/
-		@media (min-width: 1200px) {
-			.col-xl-9 {
-				flex: 0 0 auto;
-				width: 75%;
-			}
-		}
-		/* Break point: 992*/
-		@media (min-width: 992px) {
-			.d-lg-block {
-				display: block !important;
-			}
-			.smart-content {
-						font-size: calc(0.6vw + 0.6vh) !important;
-					}
-		}
-		/* Break point: 768 */
-		@media only screen and (min-width:768px){
-		.grid-view{
-		display:grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 30px;
-		
-		}
-		.logo-sec {
-			display: inline-block;
-			padding-left: 30px;
-		}
-		.logo-img-sec {
-			display: inline-block;
-			padding: 18px 0px;
-		}
-				
-		}
-		/* Break point: 375 */
-		@media only screen and (max-width:375px){
-			.carousel-item p {
-    			visibility: hidden;
-			}
-			.carousel {
-    			height: 225px;
-			}
-		
-			.row {
-			justify-content:center;
-				}
-		
-				.grid-view {
-        display: flex;
-        /* grid-template-rows: auto 100px; */
-        grid-gap: 30px;
-        flex-direction: column;
-    }
-		.logo-sec {
-    	display: inline-block;
-    	padding-left: 30px;
-				}
-		.logo-img-sec {
-    	display: inline-block;
-    	padding: 18px 0px;
-		}
-		.logo-img-sec img {
-		width: 200px;
-    	height: 50px;
-		}
-		}
-		.footer-logo{
-		margin-bottom:10px;
-		}
-		.social-icons{
-		background-color:#454545;
-		padding:10px;
-		}
-		.center-align{
-		justify-content:center;
-		}
-		.row-d-flex {
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			margin-right: -15px;
-			margin-left: -15px;
-			text-align: center;
-			gap: 10px;
-    <!-- justify-content: space-around; -->
-	<!-- herobanner-css -->
-	 
-        .hero-banner {
-            position: relative;
-            background: url('https://via.placeholder.com/1600x600') no-repeat center center;
-            background-size: cover;
-            height: 600px;
-            color: white;
-        }
-        
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .carousel-indicators {
-            bottom: -30px;
-        }
-  
-	}
-		.text-dark {
-			color: #343a40 !important;
-	
-		}
-.list-unstyled>li {
-    
-    border-bottom: 1px solid #94919138;
-    line-height: 1.2;
-    padding: 10px 0px 15px 0px;
-}
-.carousel-item p {
-    position:absolute;
-	left:12%;
-	text-align:center;
-	padding:25px;
-	font-size: 18px;
-	color:white;
-	top:25%;
-}
-.carousel-item h1{
-    position:absolute;
-	left:10%;
-	text-align:center;
-	padding:20px;
-	font-size: 22px;
-	color:white;
-}
-		/* CSS for hover effect */
-		.navbar-nav .nav-item:hover .dropdown-menu {
-		display: block;
-		margin-top: 0; 
-		}
- .dropdown-toggle::after {
-    border: 0;
-    background-image: url(https://www.xerago.com/sites/sites4/themes/xerago_theme/images/bottom.png);
-     /* position: relative; */
-    content: "";
-    right: -20px;
-    top: 4px;
-    width: 25px;
-    height: 15px;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.arrow:hover .dropdown-toggle::after {
-  transform: rotate(182deg);
-  top: 4px !important;
-  
-}
-
-
-.dropdown-toggle::after {
-    top: 1px !important;
-}
-.dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 5px;
-    vertical-align: 0px;
-} 
-/*swiper style*/
-
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-		<!-- top:195px; -->
-		width:100px;
-		height:350px
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-		
-
-/* end swiper css */
-/* end css */
-    </style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/swiper-custom.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="logo-sec">
-						<div class="logo-img-sec"> 
-							<a class="navbar-brand" href="https://www.xerago.com/">
-							<img src="sites/sites7/files/xerago-desk2x.png"  class="d-inline-block align-top" alt="Xerago">
-							
-							</a>
-						</div>
-					</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://www.xerago.com/">Home <span class="sr-only">(current)</span></a>
-                </li>
-				<li class="nav-item dropdown arrow">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Partners
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Adobe</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Acoustic</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">SalesForce</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Unica</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">IBM</a>
-                    </div>
-				</li>
-				<li class="nav-item dropdown arrow">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Industries
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Automotive</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Banking</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">E-commerce</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Entertainment</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Health Care</a>
-                    </div>
-				</li>
-				<li class="nav-item dropdown arrow">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Media Center
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Xtelligence</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Press Release</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Resources</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Insights</a>
-                    </div>
-				</li>
-				
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                
-                
-				
-            </ul>
-        </div>
-    </nav>
+    
 	
 
     <!-- Main Content -->
     <div class="container">
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="logo-sec">
+				<div class="logo-img-sec"> 
+					<a class="navbar-brand" href="https://www.xerago.com/">
+					<img src="sites/sites7/files/xerago-desk2x.png"  class="d-inline-block align-top" alt="Xerago">
+					
+					</a>
+				</div>
+			</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item active">
+			<a class="nav-link" href="https://www.xerago.com/">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item dropdown arrow">
+			<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Partners
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/adobe.png" class="pr-2">Adobe</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/acoustic.png" class="pr-2">Acoustic</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/salesforce-marketing-cloud.png" class="pr-2">SalesForce</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/unica.png" class="pr-2">Unica</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/ibm-menu.png" class="pr-2">IBM</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item partner-with-us-btn" href="#">Become a Partner</a>
+			</div>
+		</li>
+		<li class="nav-item dropdown arrow">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Industries
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/ind-1.png" class="pr-2">Automotive</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/ind-2.png" class="pr-2">Banking</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/ind-3.png" class="pr-2">E-commerce</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/ott.png" class="pr-2">Entertainment</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/ind-4.png" class="pr-2">Health Care</a>
+			</div>
+		</li>
+		<li class="nav-item dropdown arrow">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Media Center
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/xtelligence.png" class="pr-2">Xtelligence</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/pressRelease.png" class="pr-2">Press Release</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/resources.png" class="pr-2">Resources</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"><img src="assets/imgs/icons/insights-menu-icon.png" class="pr-2">Insights</a>
+			</div>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#">About Us</a>
+		</li>
+		
+		
+		
+	</ul>
+</div>
+</nav>
 	<!--swiper-section-->
-														<!--  <section>
+													<section>
+														
 															<div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="sites/sites7/files/2024-05/1-1024x1024.jpg" class="d-block w-100" alt="Image1"></div>
-        <div class="swiper-slide"><img src="sites/sites7/files/2024-05/2-1024x1024.jpg" class="d-block w-100" alt="Image2"></div>
-        <div class="swiper-slide"><img src="sites/sites7/files/2024-05/3-1024x1024.jpg" class="d-block w-100" alt="Image3"></div>
+		
+        <div class="swiper-slide">
+			<div class="swiper-content">
+				<h1 class="mb-3">Don't Settle for <br>Digital Transformation. <br>Choose Digital Impact.</h1>
+				<p>Experience sustainable and comprehensive growth by choosing Digital Impact over piecemeal transformations.</p>
+			</div>
+			<img src="assets/imgs/banner_1.webp" class="d-block w-100 w-height" alt="Image1">
+		</div>
+        <div class="swiper-slide">
+			<div class="swiper-content">
+				<h1 class="mb-3">Unlock Consistent and Sustainable Impact Through the Digital Flywheel.</h1>
+				<p>Discover the Enablers Driving Assured and Continuous Digital Impact.</p>
+			</div>
+			<img src="assets/imgs/banner_2.webp" class="d-block w-100 w-height" alt="Image2">
+		</div>
+        <div class="swiper-slide">
+			<div class="swiper-content">
+				<h1 class="mb-3">Check how much impact you are creating with your digital efforts.</h1>
+				<p>Get an in-depth assessment of your enterprise's digital health and effectiveness with our no-cost Digital Impact Study.</p>
+				<a href="#" target="_blank" class="sign-up-now">Sign Up Now</a>
+			</div>
+			<img src="assets/imgs/banner_3.webp" class="d-block w-100 w-height" alt="Image3">
+		</div>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
@@ -386,21 +130,21 @@
 </div>
 
 
-															</section> -->
+															</section> 
 								<!--end swiper-section-->
 						<!--hero-section-->
-							  <section>
+							  <!-- <section>
 								<div class="container-fw">
 								<div class="container-fluid p-2">
 											
-											<div class="hero-banner"> 
+											<div class="hero-banner">  -->
 												<!-- <div class="hero-content">
 													<h1>Welcome to Xerago!</h1>
 													<p>Discover the latest trends and features.</p>
 												</div> -->
 
 												<!-- Slider on the Hero Banner -->
-												<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+												<!-- <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
 													<div class="carousel-inner">
 														<div class="carousel-item active">
 															<h1 class="mb-3">Don't Settle for <br>Digital Transformation. <br>Choose Digital Impact.</h1>
@@ -419,7 +163,7 @@
 														</div>
 													</div>
 													<!-- Carousel controls -->
-													 <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+													 <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
 														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 														<span class="visually-hidden">Previous</span>
 													</button>
@@ -428,7 +172,7 @@
 														<span class="visually-hidden">Next</span>
 													</button> 
 													<!-- Carousel indicators -->
-												<ol class="carousel-indicators">
+												<!-- <ol class="carousel-indicators">
 														<li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
 														<li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
 														<li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
@@ -437,7 +181,7 @@
 											</div>
 										</div>
 									</div>
-								</section> 
+								</section>  --> 
 								<!--end hero-section-->
 								<!-- Dynamic section -->
 				<section class="smart-content question-section maindiv_smartfilter smart_section_padtop smart_section_padbottom recsmartsection smart7-content p-s7-sum" data-tag ="x-smart-content-block-section">

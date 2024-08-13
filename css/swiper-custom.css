@@ -1,0 +1,61 @@
+
+
+:root {
+    --swiper-navigation-size: 30px;
+    --swiper-theme-color: #007aff;
+}
+.swiper-content {
+    position: absolute;
+    text-align:left;
+    color:white !important;
+    margin: 2rem;
+    left:0px;
+    left:5%;
+}
+.swiper-content h1 {
+   
+    color:white;
+    
+}
+.sign-up-now{
+	background-image: linear-gradient(97.04deg, var(--gradient-primary-color) 0%, var(--gradient-secondary-color) 100%);
+	font-size: calc(0.9vw + 0.9vh);
+	padding: 0.6rem 2rem;
+	border-radius:5px;
+	font-weight: 800;
+	color:#fff;
+}
+/*swiper style*/
+.w-height{
+	height: 400px;
+}
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+		width:100px;
+		height:400px;
+		height: -webkit-fill-available;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+		
+        
+/* end swiper css */
