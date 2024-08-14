@@ -31,9 +31,7 @@ h1, h2{color:#2D3F8A;}
 .logo-img-sec img {
 	width: 50%;
 }
-.maindiv_smartfilter {
-background: #2A3289;
-}
+
 .justify-content-center {
 justify-content: center !important;
 }
@@ -178,9 +176,9 @@ a.partner-with-us-btn {
 			margin-left: -15px;
 			text-align: center;
 			gap: 10px;
-    <!-- justify-content: space-around; -->
+    /* justify-content: space-around; */
 }
-	<!-- herobanner-css -->
+	/* herobanner-css */
 	 
         .hero-banner {
             position: relative;
